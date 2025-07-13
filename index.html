@@ -1,143 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3rem;
-      color: #333;
-    }
-    p {
-      font-size: 1.25rem;
-      color: #666;
-    }
-    .name-placeholder {
-      font-weight: bold;
-      color: #ffffff;
-    }
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+        color: #333;
+      }
+      p {
+        font-size: 1.25rem;
+        color: #666;
+      }
+      .name-placeholder {
+        font-weight: bold;
+        color: #ffffff;
+      }
 
 
-    .poster-container {
-      display: flex;
-      border: 2px solid #2b2b2b;
+      .poster-container {
+        display: flex;
+        border-radius: 20px;
+        background-color: #2b2b2b;      
+        width: 45%;
+        height: 80%;
+        border-top: 2px solid #2b2b2b;
+        border-left: 2px solid #2b2b2b;
+        border-right: 2px solid #2b2b2b;
+        border-bottom: 10px solid #2b2b2b;
+      }
+
+      .section1 {
+        position: relative;
+        background-color: #718f8c;
+        color: #c4bc9e;
+        min-height: 100vh;
+        width: 100%;
+        text-align: center;
+      } 
+      .section2 {
+        background-color: #fffcec;
+        color: #2b2b2b;
+        height: 1000px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 0 2vw;       
+        box-sizing: border-box; 
+        gap: 20px;
+      }
+      .section3 {
+        background-color: #fffcec;
+        color: #2b2b2b;
+        height: 1000px;
+        width: 100%;
+        text-align: center;
+      }
+      .section4 {
+        background-color: #fffcec;
+        color: #2b2b2b;
+        height: 1000px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .btn {
+      padding: 12px 24px;
+      background-color: #000001;
+      color: white;
       border-radius: 20px;
-      background-color: #2b2b2b;      
-      width: 45%;
-      height: 80%;
-      padding: 1px;
-      padding-bottom: 20px; 
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
     }
-
-    .section1 {
-      position: relative;
-      background-color: #718f8c;
-      color: #c4bc9e;
-      min-height: 100vh;
-      width: 100%;
-      text-align: center;
-    } 
-    .section2 {
-      background-color: #fffcec;
-      color: #2b2b2b;
-      height: 1000px;
-      width: 100%;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      padding: 0 2vw;       
-      box-sizing: border-box; 
-      gap: 20px;
+    .btn:hover {
+      background-color: #000001;
     }
-    .section3 {
-      background-color: #fffcec;
-      color: #2b2b2b;
-      height: 1000px;
-      width: 100%;
-      text-align: center;
-    }
-    .section4 {
-      background-color: #fffcec;
-      color: #2b2b2b;
-      height: 1000px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .btn {
-    padding: 12px 24px;
-    background-color: #000001;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 1rem;
-    display: inline-block;
-  }
-  .btn:hover {
-    background-color: #000001;
-  }
-  </style>
-</head>
-<body>
-  <div class="section1" style="position: relative;">
-    <div style="position: absolute; top: -20px; right: 10px; font-weight: normal; text-align: right; font-size: 100; color:#000001;">
-      MENU<br>
-      MENU<br>
-      MENU<br>
-      MENU<br>
-      MENU<br>
+    </style>
+  </head>
+  <body>
+    <div class="section1" style="position: relative;">
+      <div style="position: absolute; top: -20px; right: 10px; font-weight: normal; text-align: right; font-size: 100; color:#000001;">
+        MENU<br>
+        MENU<br>
+        MENU<br>
+        MENU<br>
+        MENU<br>
+      </div>
+      <a href="about.html"
+        style="position: fixed; top: 300; right: 10px; padding: 0; background: none; color:#000001; text-decoration: none; font-weight: normal; font-size: 100;">
+          MENU   
+      </a>
+      <div style="position: absolute; bottom: 10px; right: 10px; font-weight: bold; text-align: right">
+        Logan A.<br>
+        NGUYEN HAMMEL
+      </div>
     </div>
-    <a href="about.html"
-      style="position: fixed; top: 300; right: 10px; padding: 0; background: none; color:#000001; text-decoration: none; font-weight: normal; font-size: 100;">
-        MENU   
-    </a>
-    <div style="position: absolute; bottom: 10px; right: 10px; font-weight: bold; text-align: right">
-      Logan A.<br>
-      NGUYEN HAMMEL
+
+    <div class="section2">
+      
+      <div class="poster-container" style="padding: 20px;">
+        <img src="bust-shot.jpg" alt="Description" style="width: 300px; height: auto; border-radius: 20px;" /> 
+      </div>
+      <div>
+      <p>This section is an ABOUT ME lOLOLLOLOLOLOLOLOLOLOLOLOL. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. Nam fermentum eu magna ac fringilla. Maecenas vitae blandit lorem, 
+        in eleifend ex. Integer sagittis, purus in dapibus consectetur, diam neque dapibus metus, convallis laoreet felis eros et est. 
+        Aliquam lacinia bibendum metus. Donec mattis magna ex, et sodales diam aliquet et. Sed at condimentum magna. Suspendisse varius ac felis
+        vitae pretium. Cras aliquam sed orci ac ultricies. Pellentesque fermentum viverra velit sed convallis. Suspendisse et arcu nec lectus sagittis 
+        tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras pretium turpis at turpis consectetur 
+        pharetra.
+      </p>
+      <a href="resume.html" class="btn"> RESUME </a>
+      </div>
     </div>
-  </div>
 
-  <div class="section2">
-    
-    <div class="poster-container" style="padding: 20px;">
-      <img src="bust-shot.jpg" alt="Description" style="width: 300px; height: auto; border-radius: 20px;" /> 
+    <div class="section3">
+      <h1>Featured projects</h1>
+      <p>This should be about my featured projects </p>
+      <a href="projects.html" class="btn"> PROJECTS </a>
     </div>
-    <div>
-    <p>This section is an ABOUT ME lOLOLLOLOLOLOLOLOLOLOLOLOL. Lorem ipsum dolor sit amet, 
-      consectetur adipiscing elit. Nam fermentum eu magna ac fringilla. Maecenas vitae blandit lorem, 
-      in eleifend ex. Integer sagittis, purus in dapibus consectetur, diam neque dapibus metus, convallis laoreet felis eros et est. 
-      Aliquam lacinia bibendum metus. Donec mattis magna ex, et sodales diam aliquet et. Sed at condimentum magna. Suspendisse varius ac felis
-       vitae pretium. Cras aliquam sed orci ac ultricies. Pellentesque fermentum viverra velit sed convallis. Suspendisse et arcu nec lectus sagittis 
-       tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras pretium turpis at turpis consectetur 
-       pharetra.
-    </p>
-    <a href="resume.html" class="btn"> RESUME </a>
+
+    <div class="section4">
+      <h1>Footer</h1>
     </div>
-  </div>
-
-  <div class="section3">
-    <h1>Featured projects</h1>
-    <p>This should be about my featured projects </p>
-    <a href="projects.html" class="btn"> PROJECTS </a>
-  </div>
-
-  <div class="section4">
-    <h1>Footer</h1>
-  </div>
 
 
-</body>
-</html>
+  </body>
+  </html>
