@@ -103,7 +103,7 @@
     </style>
   </head>
   <body>
-    <div class="section1"  style="position: relative; background-image: url('docs/assets/image-from-rawpixel-id-8865030-original.jpg'); background-size: cover; background-position: center;">
+    <div class="section1" style="position: relative; background-image: url('docs/assets/image-from-rawpixel-id-8865030-original.jpg'); background-size: cover; background-position: center;">
       <div style="position: absolute; top: -20px; right: 10px; font-weight: normal; text-align: right; font-size: 100; color:#000001;">
         MENU<br>
         MENU<br>
@@ -180,6 +180,17 @@
       <h1>Footer</h1>
     </div>
 
-
+  <script>
+  window.addEventListener('scroll', function() {
+    const section1 = document.querySelector('.section1');
+    const scrollPosition = window.scrollY;
+    
+    // Calculate blur amount (0 to 10px based on scroll)
+    const blurAmount = Math.min(scrollPosition / 50, 10);
+    
+    section1.style.filter = `blur(${blurAmount}px)`;
+  });
+  </script>
+    
   </body>
   </html>
