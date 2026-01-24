@@ -181,14 +181,26 @@
     </div>
 
  <script>
-  window.addEventListener('scroll', function() {
-    const section1 = document.querySelector('.section1');
+  const section1 = document.querySelector('.section1');
     const scrollPosition = window.scrollY;
+    const releasePoint = 500; // Change this number to adjust when it releases
     
-    // Calculate blur amount (0 to 10px based on scroll)
-    const blurAmount = Math.min(scrollPosition / 50, 10);
-    
-    section1.style.filter = `blur(${blurAmount}px)`;
+    if (scrollPosition < releasePoint) {
+      // Keep it fixed and blur it
+      section1.style.position = 'fixed';
+      section1.style.top = '0';
+      section1.style.width = '100%';
+      section1.style.zIndex = '0';
+      
+      // Calculate blur (0 to 10px)
+      const blurAmount = Math.min(scrollPosition / 50, 10);
+      section1.style.filter = `blur(${blurAmount}px)`;
+    } else {
+      // Release it to scroll normally
+      section1.style.position = 'relative';
+      section1.style.top = 'auto';
+      section1.style.filter = 'blur(10px)'; // Keep max blur when released
+    }
   });
   </script>
     
