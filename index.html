@@ -187,6 +187,8 @@
     
     // Calculate blur amount (0 to 10px based on scroll)
     const blurAmount = Math.min(scrollPosition / 50, 10);
+    section1.style.filter = `blur(${blurAmount}px)`;
+
 
     const releasePoint = 500; // Adjust this value (in pixels) for when it releases
     
@@ -202,7 +204,6 @@
       section1.style.top = 'auto';
     }
     
-    section1.style.filter = `blur(${blurAmount}px)`;
   });
   </script>
     
