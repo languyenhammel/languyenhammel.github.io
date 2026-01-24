@@ -184,7 +184,9 @@
   const section1 = document.querySelector('.section1');
     const scrollPosition = window.scrollY;
     const releasePoint = 500; // Change this number to adjust when it releases
-    
+
+    console.log('Scroll position:', scrollPosition);
+   
     if (scrollPosition < releasePoint) {
       // Keep it fixed and blur it
       section1.style.position = 'fixed';
@@ -195,11 +197,15 @@
       // Calculate blur (0 to 10px)
       const blurAmount = Math.min(scrollPosition / 50, 10);
       section1.style.filter = `blur(${blurAmount}px)`;
+      console.log('Fixed mode - blur:', blurAmount);
+
     } else {
       // Release it to scroll normally
       section1.style.position = 'relative';
       section1.style.top = 'auto';
       section1.style.filter = 'blur(10px)'; // Keep max blur when released
+
+      console.log('Released.');
     }
   });
   </script>
