@@ -189,20 +189,6 @@
     const blurAmount = Math.min(scrollPosition / 50, 10);
     section1.style.filter = `blur(${blurAmount}px)`;
 
-
-    const releasePoint = 500; // Adjust this value (in pixels) for when it releases
-    
-    if (scrollPosition < releasePoint) {
-      // Keep it fixed
-      section1.style.position = 'fixed';
-      section1.style.top = '0';
-      section1.style.width = '100%';
-      section1.style.zIndex = '-1';
-    } else {
-      // Release it to scroll normally
-      section1.style.position = 'relative';
-      section1.style.top = 'auto';
-    }
     
   });
   </script>
