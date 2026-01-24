@@ -180,16 +180,15 @@
       <h1>Footer</h1>
     </div>
 
-  <script>
+ <script>
   window.addEventListener('scroll', function() {
     const section1 = document.querySelector('.section1');
     const scrollPosition = window.scrollY;
     
     // Calculate blur amount (0 to 10px based on scroll)
     const blurAmount = Math.min(scrollPosition / 50, 10);
-    section1.style.filter = `blur(${blurAmount}px)`;
-
     
+    section1.style.filter = `blur(${blurAmount}px)`;
   });
   </script>
     
